@@ -9,7 +9,7 @@ class ProductManager:
 
     def display_products(self):
         for product in self.products:
-            print(product.display_infi())
+            print(product.display_info())
 
     def total_inventory_value(self):
         return sum(product.price * product.quantity for product in self.products)
